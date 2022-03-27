@@ -6,13 +6,13 @@ namespace Cycle_Control
     {
         static void Main(string[] args)
         {
-           
             string cycleShutdownWord = "exit";
             bool disableCycle = true;
 
             while(disableCycle)
             {
                  Console.WriteLine("Для останова программы наберите exit");
+
                 if(Console.ReadLine().Equals(cycleShutdownWord))
                 {
                     disableCycle = false;
