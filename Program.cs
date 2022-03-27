@@ -8,15 +8,14 @@ namespace Cycle_Control
         {
            
             string cycleShutdownWord = "exit";
-            bool flag = true;
+            bool disableCycle = true;
 
-            while(flag)
+            while(disableCycle)
             {
                  Console.WriteLine("Для останова программы наберите exit");
-                string temp = Console.ReadLine();
-                if(temp.Equals(cycleShutdownWord))
+                if(Console.ReadLine().Equals(cycleShutdownWord))
                 {
-                    flag = false;
+                    disableCycle = false;
                     Console.WriteLine("Подтвержден выход из цикла");
                 }
             }
